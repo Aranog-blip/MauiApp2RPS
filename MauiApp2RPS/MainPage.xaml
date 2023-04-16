@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2RPS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="Comp"
+                Text="Comp's Answer:"
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Text box"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="DisplayComp"
+                Text=""
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Shows the computers choice."
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="User"
+                Text="User's answer:"
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Text box"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="DisplayUser"
+                Text=""
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Shows the computers choice."
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="Results"
+                Text="Result"
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Text box"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="DisplayResults"
+                Text=""
+                BackgroundColor="Beige"
+                SemanticProperties.Hint="Shows the results"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="UserBtn1"
+                Text="ROCK"
+                SemanticProperties.Hint="User chooses rock"
+                Clicked="UserClick1"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="UserBtn2"
+                Text="PAPER"
+                SemanticProperties.Hint="User chooses paper"
+                Clicked="UserClick2"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="UserBtn3"
+                Text="SCISSORS"
+                SemanticProperties.Hint="User chooses scissors"
+                Clicked="UserClick3"
+                HorizontalOptions="Center" />
+                
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
