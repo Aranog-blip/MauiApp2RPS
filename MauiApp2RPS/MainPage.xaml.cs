@@ -16,6 +16,7 @@ public partial class MainPage : ContentPage
         Random CompChoice = new Random();
         var RandomChoice = CompChoice.Next(Choices.Length);
         DisplayComp.Text = Choices[RandomChoice];
+        WiningCondition();
     }
     private void UserClick2(object sender, EventArgs e)
     {

@@ -21,61 +21,63 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
+            
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                x:Name="User"
+                Text="User's answer:"
+                SemanticProperties.Hint="Text box"
+                HorizontalOptions="Center"
+                FontSize="18"/>
+            
+            <Label
+                x:Name="DisplayUser"
+                Text=""
+                SemanticProperties.Hint="Shows the computers choice."
+                HorizontalOptions="Center"
+                FontSize="18"/>
 
             <Label
                 x:Name="Comp"
                 Text="Comp's Answer:"
-                BackgroundColor="Beige"
                 SemanticProperties.Hint="Text box"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="18"/>
+
             <Label
                 x:Name="DisplayComp"
                 Text=""
-                BackgroundColor="Beige"
                 SemanticProperties.Hint="Shows the computers choice."
-                HorizontalOptions="Center" />
-            <Label
-                x:Name="User"
-                Text="User's answer:"
-                BackgroundColor="Beige"
-                SemanticProperties.Hint="Text box"
-                HorizontalOptions="Center" />
-            <Label
-                x:Name="DisplayUser"
-                Text=""
-                BackgroundColor="Beige"
-                SemanticProperties.Hint="Shows the computers choice."
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="18"/>
+
             <Label
                 x:Name="Results"
                 Text="Result"
-                BackgroundColor="Beige"
                 SemanticProperties.Hint="Text box"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="18"/>
+            
             <Label
                 x:Name="DisplayResults"
                 Text=""
-                BackgroundColor="Beige"
                 SemanticProperties.Hint="Shows the results"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="18"/>
+            
             <Button
                 x:Name="UserBtn1"
                 Text="ROCK"
                 SemanticProperties.Hint="User chooses rock"
                 Clicked="UserClick1"
                 HorizontalOptions="Center" />
+            
             <Button
                 x:Name="UserBtn2"
                 Text="PAPER"
                 SemanticProperties.Hint="User chooses paper"
                 Clicked="UserClick2"
                 HorizontalOptions="Center" />
+            
             <Button
                 x:Name="UserBtn3"
                 Text="SCISSORS"
